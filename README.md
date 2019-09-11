@@ -13,3 +13,10 @@ private static void detectNonSdkApiUsageOnAndroidP(){
 }
 ```
 **io流工具类：common-io**
+
+启动插件
+```java
+Intent intent=new Intent(MainActivity.this,PluginLoadActivity.class);
+intent.putExtra(Constant.KEY_ACTIVITY_CLASSNAME,"com.tencent.shadow.sample.plugin.app.lib.gallery.splash.SplashActivity");
+startActivity(intent);
+```
